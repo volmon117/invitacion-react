@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/invitacion-react/static/css/main.a428deb3.css",
-    "main.js": "/invitacion-react/static/js/main.6aa39e64.js",
+    "main.css": "/invitacion-react/static/css/main.c77ffe8f.css",
+    "main.js": "/invitacion-react/static/js/main.5bcbe95b.js",
     "static/js/787.19adfa7d.chunk.js": "/invitacion-react/static/js/787.19adfa7d.chunk.js",
-    "static/media/Tangerine-Regular.ttf": "/invitacion-react/static/media/Tangerine-Regular.6b04eb83dd71e2762243.ttf",
     "index.html": "/invitacion-react/index.html",
-    "main.a428deb3.css.map": "/invitacion-react/static/css/main.a428deb3.css.map",
-    "main.6aa39e64.js.map": "/invitacion-react/static/js/main.6aa39e64.js.map",
+    "main.c77ffe8f.css.map": "/invitacion-react/static/css/main.c77ffe8f.css.map",
+    "main.5bcbe95b.js.map": "/invitacion-react/static/js/main.5bcbe95b.js.map",
     "787.19adfa7d.chunk.js.map": "/invitacion-react/static/js/787.19adfa7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a428deb3.css",
-    "static/js/main.6aa39e64.js"
+    "static/css/main.c77ffe8f.css",
+    "static/js/main.5bcbe95b.js"
   ]
 }
