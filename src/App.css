@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #902c04;
 }
 
 .App-header {
@@ -10,12 +11,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #cc5733;
-}
-
-body {
-  background-color: #902c04;
 }
