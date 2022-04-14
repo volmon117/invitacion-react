@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import React, { Component } from "react";
 
 class SaveTheDate extends Component {
@@ -30,14 +31,16 @@ class SaveTheDate extends Component {
   }
   render() {
     return (
-      <div>
-        <h3 className="Clock-days">
+      <Typography
+        fontFamily='Tangerine'
+        variant="h2"
+        noWrap
+        component="div">
           {this.leading0(this.state.days)} Days  
           {this.leading0(this.state.hours)} Hours  
           {this.leading0(this.state.minutes)} Minutes  
           {this.leading0(this.state.seconds)} Seconds  
-        </h3>
-      </div>
+      </Typography>
     );
   }
 }

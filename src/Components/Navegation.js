@@ -28,7 +28,8 @@ const Navegation = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
-            variant="h4"
+            fontFamily='Tangerine'
+            variant="h2"
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
@@ -73,7 +74,8 @@ const Navegation = () => {
             </Menu>
           </Box>
           <Typography
-            variant="h6"
+            fontFamily='Tangerine'
+            variant="h2"
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}

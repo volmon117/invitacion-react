@@ -1,10 +1,17 @@
 import React, { Component } from "react";
 
+
 import Navegation from "./Components/Navegation";
 import SaveTheDate from "./Components/SaveTheDate";
-import Image from "material-ui-image";
 
 import "./App.css";
+import { createTheme, ThemeProvider } from "@material-ui/core";
+
+const theme = createTheme ({
+  typography: {
+    fontFamily: 'Tangerine'
+  }
+})
 
 class App extends Component {
   constructor(props) {
@@ -13,11 +20,12 @@ class App extends Component {
   }
   render() {
     return (
+      <ThemeProvider theme={theme}>
       <div className="App">
-        <Image src="public/MonogramaByS.png"/>
         <Navegation />
         <SaveTheDate deadline={this.state.deadline} />
       </div>
+      </ThemeProvider>
     );
   }
 }
