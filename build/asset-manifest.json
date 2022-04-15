@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/invitacion-react/static/css/main.b91622df.css",
+    "main.js": "/invitacion-react/static/js/main.0943cbec.js",
+    "static/js/787.19adfa7d.chunk.js": "/invitacion-react/static/js/787.19adfa7d.chunk.js",
+    "index.html": "/invitacion-react/index.html",
+    "main.b91622df.css.map": "/invitacion-react/static/css/main.b91622df.css.map",
+    "main.0943cbec.js.map": "/invitacion-react/static/js/main.0943cbec.js.map",
+    "787.19adfa7d.chunk.js.map": "/invitacion-react/static/js/787.19adfa7d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b91622df.css",
+    "static/js/main.0943cbec.js"
+  ]
+}

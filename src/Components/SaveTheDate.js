@@ -1,47 +1,23 @@
-import { Typography } from "@mui/material";
-import React, { Component } from "react";
+import { Typography } from "@material-ui/core";
 
-class SaveTheDate extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      days: 0,
-      hours: 0,
-      minutes: 0,
-      seconds: 0
-    };
-  }
-  componentDidMount() {
-    setInterval(() => this.getTimeUntil(this.props.deadline), 1000);
-  }
-  leading0(num) {
-    return num < 10 ? "0" + num : num;
-  }
-  getTimeUntil(deadline) {
-    const time = Date.parse(deadline) - Date.parse(new Date());
-    if (time < 0) {
-      this.setState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-    } else {
-      const seconds = Math.floor((time / 1000) % 60);
-      const minutes = Math.floor((time / 1000 / 60) % 60);
-      const hours = Math.floor((time / (1000 * 60 * 60)) % 24);
-      const days = Math.floor(time / (1000 * 60 * 60 * 24));
-      this.setState({ days, hours, minutes, seconds });
-    }
-  }
-  render() {
+const SaveTheDate = () => {
+
     return (
-      <Typography
-        fontFamily='Tangerine'
-        variant="h2"
-        noWrap
-        component="div">
-          {this.leading0(this.state.days)} Days  
-          {this.leading0(this.state.hours)} Hours  
-          {this.leading0(this.state.minutes)} Minutes  
-          {this.leading0(this.state.seconds)} Seconds  
-      </Typography>
+      <>
+        <Typography variant="h3" fontFamily="Tangerine">
+          <p>Save The Date</p>
+        </Typography>
+        <Typography variant="h1" fontFamily="Tangerine">
+          Brisia & Santiago
+        </Typography>
+        <Typography variant="h3" fontFamily="Tangerine">
+          <p>30-09-2022</p>
+        </Typography>
+        <Typography variant="h3" fontFamily="Tangerine">
+          <p>Las mejores cosas de la vida merecen ser compartidas, gracias por ser parte de nuestra historia...</p>
+        </Typography>
+      </>
     );
-  }
 }
+
 export default SaveTheDate;
