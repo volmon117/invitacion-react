@@ -38,10 +38,12 @@ class Countdown extends Component {
         variant="h4"
         noWrap
         component="div">
-          {this.leading0(this.state.days)}  Dias‎ ‎  
-          {this.leading0(this.state.hours)}  Horas‎ ‎ 
-          {this.leading0(this.state.minutes)}  Minutos‎ ‎ 
-          {this.leading0(this.state.seconds)}  Segundos
+          {this.leading0(this.state.days)} Dias‎  ‎ ‎
+          {this.leading0(this.state.hours)} Horas‎  ‎ ‎
+          {this.leading0(this.state.minutes)} Minutos‎  ‎ ‎
+          {this.leading0(this.state.seconds)} Segundos
+          <br/>
+          <br/>
       </Typography>
     );
   }

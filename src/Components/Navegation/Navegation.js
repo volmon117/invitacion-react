@@ -14,6 +14,7 @@ import {
   ThemeProvider,
   CssBaseline
 } from "@material-ui/core";
+import {animateScroll as scroll} from "react-scroll";
 import { createTheme } from "@material-ui/core/styles";
 import ScrollToColor from "./ScrollToColor";
 
@@ -49,6 +50,7 @@ const Navegation = () => {
                       component="div"
                       sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
                       color= "black"
+                      onClick={() => scroll.scrollToTop}
                     >
                       Brisia & Santiago
                     </Typography>
@@ -95,6 +97,7 @@ const Navegation = () => {
                       noWrap
                       component="div"
                       sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+                      onClick={() => scroll.scrollToTop}
                     >
                       Brisia & Santiago
                     </Typography>

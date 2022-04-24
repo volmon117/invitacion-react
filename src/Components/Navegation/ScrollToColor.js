@@ -14,7 +14,7 @@ const ScrollHandler = props => {
       color: trigger ? "white" : "black",
       transition: trigger ? "0.3s" : "0.5s",
       boxShadow: "none",
-      padding: "10px 0px"
+      padding: "0px 0px"
     }
   });
 };
