@@ -8,6 +8,7 @@ import Cards from "./Components/Cards/Cards";
 
 import "./App.css";
 import { createTheme, ThemeProvider } from "@material-ui/core";
+import TimeLine from "./Components/timeline";
 
 const theme = createTheme({
 	typography: {
@@ -29,6 +30,7 @@ class App extends Component {
 					<Countdown deadline={this.state.deadline} />
 					<People />
 					<Cards />
+					<TimeLine />
 				</div>
 			</ThemeProvider>
 		);
