@@ -5,6 +5,7 @@ import Countdown from "./Components/Countdown/Countdown";
 import SaveTheDate from "./Components/SaveTheDate";
 import People from "./Components/People";
 import Cards from "./Components/Cards/Cards";
+import Rsvp from "./Components/RSVP/RSVP";
 
 import "./App.css";
 import { createTheme, ThemeProvider } from "@material-ui/core";
@@ -31,6 +32,7 @@ class App extends Component {
 					<People />
 					<Cards />
 					<TimeLine />
+					<Rsvp />
 				</div>
 			</ThemeProvider>
 		);

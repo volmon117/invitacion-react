@@ -2,6 +2,7 @@ import { Typography, CardMedia, CardContent, Grid } from "@mui/material";
 import Card from "@mui/material/Card";
 import { CardActionArea, createTheme, ThemeProvider } from "@material-ui/core";
 import "../../App.css";
+import imagen from "../../Images/iglesiafoto.jpeg";
 
 const theme = createTheme({
 	typography: {
@@ -34,9 +35,7 @@ const Cards = () => {
 						<CardActionArea onClick={handleClickIglesia}>
 							<CardMedia
 								component="img"
-								height="250"
-								width="150"
-								image="../Components/Cards/iglesiafoto.jpeg"
+								image="imagen"
 								alt="Parroquia San Pablo, Las Fuentes"
 							/>
 							<CardContent>
@@ -52,8 +51,7 @@ const Cards = () => {
 						<CardActionArea onClick={handleClickCipres}>
 							<CardMedia
 								component="img"
-								height="250"
-								image="/src/iglesiafoto.jpg"
+								image="../src/Components/Cards/cipres.jpg"
 								alt="Hacienda del Cipres"
 							/>
 							<CardContent>
