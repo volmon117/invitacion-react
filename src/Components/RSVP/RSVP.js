@@ -29,7 +29,6 @@ const Rsvp = () => {
 			);
 			await response.json();
 			{
-				console.log(assistence);
 				setData({ ...data, assistence: "", email: "" });
 			}
 		} catch (err) {
@@ -50,10 +49,10 @@ const Rsvp = () => {
 						onChange={handleChange}
 					/>
 					<label for="assistence" className={styles.formLabel}>
-						Asistencia
+						Podran asistir?
 					</label>
 				</div>
-				<div class="form">
+				<div className={styles.form}>
 					<input
 						type="text"
 						name="email"
@@ -62,9 +61,12 @@ const Rsvp = () => {
 						autoComplete="off"
 						onChange={handleChange}
 					/>
+					<label for="assistence" className={styles.formLabel}>
+						Cuantos vendran?
+					</label>
 				</div>
 				<div>
-					<button>Submit</button>
+					<button className={styles.button}>Submit</button>
 				</div>
 			</form>
 			{/* <form noValidate autoComplete="off" onSubmit={handleSubmit}>

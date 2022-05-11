@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/invitacion-react/static/css/main.694f6968.css",
-    "main.js": "/invitacion-react/static/js/main.00eec0b1.js",
+    "main.css": "/invitacion-react/static/css/main.01b0eb93.css",
+    "main.js": "/invitacion-react/static/js/main.746fdbb7.js",
     "static/js/787.19adfa7d.chunk.js": "/invitacion-react/static/js/787.19adfa7d.chunk.js",
     "static/media/iglesiafoto.jpeg": "/invitacion-react/static/media/iglesiafoto.50bc597035abcb7e7811.jpeg",
     "static/media/iglesia.png": "/invitacion-react/static/media/iglesia.4bb98127a9e9c6633c72.png",
     "index.html": "/invitacion-react/index.html",
-    "main.694f6968.css.map": "/invitacion-react/static/css/main.694f6968.css.map",
-    "main.00eec0b1.js.map": "/invitacion-react/static/js/main.00eec0b1.js.map",
+    "main.01b0eb93.css.map": "/invitacion-react/static/css/main.01b0eb93.css.map",
+    "main.746fdbb7.js.map": "/invitacion-react/static/js/main.746fdbb7.js.map",
     "787.19adfa7d.chunk.js.map": "/invitacion-react/static/js/787.19adfa7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.694f6968.css",
-    "static/js/main.00eec0b1.js"
+    "static/css/main.01b0eb93.css",
+    "static/js/main.746fdbb7.js"
   ]
 }
