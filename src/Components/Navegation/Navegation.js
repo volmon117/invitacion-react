@@ -110,9 +110,6 @@ const Navegation = () => {
 					</AppBar>
 				</ScrollToColor>
 			</ThemeProvider>
-			<br />
-			<br />
-			<br />
 		</div>
 	);
 };

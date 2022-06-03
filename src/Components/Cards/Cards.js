@@ -2,7 +2,8 @@ import { Typography, CardMedia, CardContent, Grid } from "@mui/material";
 import Card from "@mui/material/Card";
 import { CardActionArea, createTheme, ThemeProvider } from "@material-ui/core";
 import "../../App.css";
-import imagen from "../../Images/iglesiafoto.jpeg";
+import imageniglesia from "../../Images/iglesiafoto.jpeg";
+import imagencipres from "../../Images/cipres.jpeg";
 
 const theme = createTheme({
 	typography: {
@@ -35,11 +36,12 @@ const Cards = () => {
 						<CardActionArea onClick={handleClickIglesia}>
 							<CardMedia
 								component="img"
-								image="imagen"
+								image={imageniglesia}
 								alt="Parroquia San Pablo, Las Fuentes"
 							/>
 							<CardContent>
-								<Typography>
+								<Typography variant="h5">Iglesia</Typography>
+								<Typography variant="body2">
 									Calle San Antonio 105, Las Fuentes, 45070 Zapopan, Jal.
 								</Typography>
 							</CardContent>
@@ -51,11 +53,12 @@ const Cards = () => {
 						<CardActionArea onClick={handleClickCipres}>
 							<CardMedia
 								component="img"
-								image="../src/Components/Cards/cipres.jpg"
+								image={imagencipres}
 								alt="Hacienda del Cipres"
 							/>
 							<CardContent>
-								<Typography>
+								<Typography variant="h5">Salon</Typography>
+								<Typography variant="body2">
 									Valle de Sta Cruz 9, Valle de Santa Cruz, 45640 Santa Cruz de
 									las Flores, Jal.
 								</Typography>

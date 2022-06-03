@@ -11,9 +11,6 @@ const Rsvp = () => {
 	});
 	const { assistence, email, message } = data;
 
-	const handleChange = (e) =>
-		setData({ ...data, [e.target.name]: e.target.value });
-
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
@@ -38,7 +35,7 @@ const Rsvp = () => {
 
 	return (
 		<div class="form">
-			<form onSubmit={handleSubmit}>
+			{/* <form onSubmit={handleSubmit}>
 				<div className={styles.form}>
 					<input
 						type="text"
@@ -68,26 +65,30 @@ const Rsvp = () => {
 				<div>
 					<button className={styles.button}>Submit</button>
 				</div>
-			</form>
-			{/* <form noValidate autoComplete="off" onSubmit={handleSubmit}>
+			</form> */}
+			<form noValidate autoComplete="off" onSubmit={handleSubmit}>
 				<TextField
 					id="name"
 					name="assistence"
 					label="Podran asistir?"
-					onChange={handleChange}
+					onChange={(e) => {
+						setData({ ...data, assistence: e.target.value });
+					}}
 					size="small"
 				/>
 				<TextField
 					id="email"
 					name="email"
 					label="Preguntas o Comentarios"
-					onChange={handleChange}
+					onChange={(e) => {
+						setData({ ...data, email: e.target.value });
+					}}
 					size="small"
 				/>
-				<Button variant="text" color="primary">
+				<Button variant="text" color="primary" onClick={handleSubmit}>
 					Enviar
 				</Button>
-			</form> */}
+			</form>
 			<br />
 			<br />
 			<br />
