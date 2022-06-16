@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/invitacion-react/static/css/main.7b2c6564.css",
-    "main.js": "/invitacion-react/static/js/main.0d2f8a36.js",
-    "static/js/787.19adfa7d.chunk.js": "/invitacion-react/static/js/787.19adfa7d.chunk.js",
-    "static/media/foto1.jpg": "/invitacion-react/static/media/foto1.e7d43924aaab94a00417.jpg",
-    "static/media/cipres.jpeg": "/invitacion-react/static/media/cipres.5d1aa860cb0c882ca88f.jpeg",
-    "static/media/iglesiafoto.jpeg": "/invitacion-react/static/media/iglesiafoto.50bc597035abcb7e7811.jpeg",
-    "static/media/iglesia.png": "/invitacion-react/static/media/iglesia.4bb98127a9e9c6633c72.png",
-    "index.html": "/invitacion-react/index.html",
-    "main.7b2c6564.css.map": "/invitacion-react/static/css/main.7b2c6564.css.map",
-    "main.0d2f8a36.js.map": "/invitacion-react/static/js/main.0d2f8a36.js.map",
-    "787.19adfa7d.chunk.js.map": "/invitacion-react/static/js/787.19adfa7d.chunk.js.map"
+    "main.css": "/static/css/main.7b2c6564.css",
+    "main.js": "/static/js/main.e29c03a0.js",
+    "static/js/787.19adfa7d.chunk.js": "/static/js/787.19adfa7d.chunk.js",
+    "static/media/foto2.jpg": "/static/media/foto2.c051878ca3a383e647e3.jpg",
+    "static/media/cipres.jpeg": "/static/media/cipres.5d1aa860cb0c882ca88f.jpeg",
+    "static/media/iglesiafoto.jpeg": "/static/media/iglesiafoto.50bc597035abcb7e7811.jpeg",
+    "static/media/iglesia.png": "/static/media/iglesia.4bb98127a9e9c6633c72.png",
+    "index.html": "/index.html",
+    "main.7b2c6564.css.map": "/static/css/main.7b2c6564.css.map",
+    "main.e29c03a0.js.map": "/static/js/main.e29c03a0.js.map",
+    "787.19adfa7d.chunk.js.map": "/static/js/787.19adfa7d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7b2c6564.css",
-    "static/js/main.0d2f8a36.js"
+    "static/js/main.e29c03a0.js"
   ]
 }
