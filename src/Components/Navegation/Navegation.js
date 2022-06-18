@@ -2,20 +2,24 @@ import * as React from "react";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import { ThemeProvider, CssBaseline } from "@material-ui/core";
-import { animateScroll as scroll } from "react-scroll";
-import { createTheme } from "@material-ui/core/styles";
+import Typography from "@mui/material/Typography";
 import ScrollToColor from "./ScrollToColor";
+import { ThemeProvider, CssBaseline } from "@material-ui/core";
+import { createTheme } from "@material-ui/core/styles";
+import { Link } from "react-scroll";
 
-const pages = ["Save the Date", "Fecha", "Lugar", "Confirmacion"];
+const pages = [
+   { menu: 'Save the Date', id: 'saveDate' },
+   { menu: 'Fecha', id: 'fecha' },
+   { menu: 'Lugar', id: 'lugar' },
+   { menu: 'Confirmacion', id: 'Confirmacion' },
+];
 
 const Navegation = () => {
 	const theme = createTheme();
@@ -26,7 +30,7 @@ const Navegation = () => {
 		setAnchorElNav(event.currentTarget);
 	};
 
-	const handleCloseNavMenu = () => {
+	const handleCloseNavMenu = (page) => {
 		setAnchorElNav(null);
 	};
 
@@ -35,9 +39,12 @@ const Navegation = () => {
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
 				<ScrollToColor>
-					<AppBar style={{ boxShadow: "none" }}>
+					<AppBar style={{ boxShadow: 'none' }}>
 						<Container maxWidth="xl">
-							<Toolbar disableGutters>
+							<Box
+								disableGutters
+								sx={{ display: "flex", justifyContent: "flex-end" }}
+							>
 								<Typography
 									fontFamily="Tangerine"
 									variant="h2"
@@ -61,6 +68,7 @@ const Navegation = () => {
 										<MenuIcon />
 									</IconButton>
 									<Menu
+										style={{}}
 										id="menu-appbar"
 										anchorEl={anchorElNav}
 										anchorOrigin={{
@@ -79,12 +87,13 @@ const Navegation = () => {
 										}}
 									>
 										{pages.map((page) => (
-											<MenuItem key={page} onClick={handleCloseNavMenu}>
-												<Typography textAlign="center">{page}</Typography>
+											<MenuItem key={page.id} onClick={handleCloseNavMenu}>
+												<Typography textAlign="center">{page.menu}</Typography>
 											</MenuItem>
 										))}
 									</Menu>
 								</Box>
+
 								<Typography
 									fontFamily="Tangerine"
 									variant="h2"
@@ -95,17 +104,27 @@ const Navegation = () => {
 									Brisia & Santiago
 								</Typography>
 								<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-									{pages.map((page) => (
+									{pages.map((page, i) => (
 										<Button
-											key={page}
-											onClick={handleCloseNavMenu}
-											sx={{ my: 2, color: "black", display: "block" }}
+											key={page.id}
+											onClick={()=>handleCloseNavMenu(page)}
+											sx={{ my: 2, color: "black", display: "block", font: "italic",
+												fontSize: "14px",
+												fontWeight: "bold",}}
 										>
-											{page}
+											<Link
+												activeClass="active"
+												to={page.id}
+												spy={true}
+												smooth={true}
+												style={{ textDecoration: "none", color: "black" }}
+											>
+												{page.menu}
+											</Link>
 										</Button>
 									))}
 								</Box>
-							</Toolbar>
+							</Box>
 						</Container>
 					</AppBar>
 				</ScrollToColor>

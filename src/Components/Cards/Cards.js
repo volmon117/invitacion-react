@@ -30,6 +30,8 @@ const Cards = () => {
 				justifyContent="center"
 				alignItems="center"
 				className={Grid}
+				id='lugar'
+				sx={{pt: 6}}
 			>
 				<Grid item xs={12} sm={6} p={2}>
 					<Card>
