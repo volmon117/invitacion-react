@@ -47,6 +47,7 @@ const Rsvp = () => {
 					backgroundPosition: "center",
 				}}
 			>
+				<Typography variant="h2">RSVP</Typography>
 				<Typography variant="h4">
 					¡Queremos compartir este momento tan esperado contigo!
 				</Typography>
@@ -69,7 +70,6 @@ const Rsvp = () => {
 						style={{ marginRight: "10px", marginBottom: "10px", width: "20%" }}
 					/>
 					<TextField
-						InputProps={{ inputProps: { style: { color: "#dfb9a6" } } }}
 						id="people"
 						name="people"
 						label="Numero de personas"
@@ -110,7 +110,7 @@ const Rsvp = () => {
 					<br />
 					<Button
 						variant="text"
-						style={{ backgroundColor: "lightgrey", color: "black" }}
+						style={{ backgroundColor: "#fbf6f3", color: "black" }}
 						onClick={handleSubmit}
 					>
 						Confirmar assitencia
