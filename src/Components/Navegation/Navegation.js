@@ -15,10 +15,10 @@ import { createTheme } from "@material-ui/core/styles";
 import { Link } from "react-scroll";
 
 const pages = [
-   { menu: 'Save the Date', id: 'saveDate' },
-   { menu: 'Fecha', id: 'fecha' },
-   { menu: 'Lugar', id: 'lugar' },
-   { menu: 'Confirmacion', id: 'Confirmacion' },
+	{ menu: "Save the Date", id: "saveDate" },
+	{ menu: "Fecha", id: "fecha" },
+	{ menu: "Lugar", id: "lugar" },
+	{ menu: "Confirmacion", id: "Confirmacion" },
 ];
 
 const Navegation = () => {
@@ -39,7 +39,7 @@ const Navegation = () => {
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
 				<ScrollToColor>
-					<AppBar style={{ boxShadow: 'none' }}>
+					<AppBar style={{ boxShadow: "none" }}>
 						<Container maxWidth="xl">
 							<Box
 								disableGutters
@@ -99,18 +99,32 @@ const Navegation = () => {
 									variant="h2"
 									noWrap
 									component="div"
-									sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+									sx={{
+										flexGrow: 1,
+										display: { xs: "flex", md: "none" },
+									}}
 								>
 									Brisia & Santiago
 								</Typography>
-								<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+								<Box
+									sx={{
+										flexGrow: 1,
+										paddingLeft: "600px",
+										display: { xs: "none", md: "flex" },
+									}}
+								>
 									{pages.map((page, i) => (
 										<Button
 											key={page.id}
-											onClick={()=>handleCloseNavMenu(page)}
-											sx={{ my: 2, color: "black", display: "block", font: "italic",
+											onClick={() => handleCloseNavMenu(page)}
+											sx={{
+												my: 2,
+												color: "black",
+												display: "block",
+												font: "italic",
 												fontSize: "14px",
-												fontWeight: "bold",}}
+												fontWeight: "bold",
+											}}
 										>
 											<Link
 												activeClass="active"

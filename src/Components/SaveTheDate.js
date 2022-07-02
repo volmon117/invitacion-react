@@ -1,5 +1,5 @@
 import { Typography } from "@material-ui/core";
-import background from "../Images/foto2.jpg";
+import background from "../Images/foto1.jpg";
 import { Box } from "@mui/material";
 
 const SaveTheDate = () => {

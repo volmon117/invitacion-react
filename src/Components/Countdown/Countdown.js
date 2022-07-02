@@ -1,6 +1,7 @@
-import { Typography } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import React, { Component } from "react";
 import styles from "./countdown.module.css";
+import background from "../../Images/foto2.jpg";
 
 class Countdown extends Component {
 	constructor(props) {
@@ -39,11 +40,6 @@ class Countdown extends Component {
 				<br />
 				<br />
 				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
 				<Typography variant="h3" fontFamily="Tangerine">
 					<p>
 						Las mejores cosas de la vida merecen ser compartidas, gracias por
@@ -68,6 +64,16 @@ class Countdown extends Component {
 				<br />
 				<br />
 				<br />
+				<br />
+				<Box
+					id="saveDate"
+					sx={{
+						backgroundImage: `linear-gradient(to right, rgba(140, 140, 140, 0.4), rgba(140, 140, 140, 0.4)),url(${background})`,
+						padding: "320px 0 340px 0",
+						filter: "grayscale(1)",
+						backgroundPosition: "center",
+					}}
+				></Box>
 				<br />
 				<br />
 				<br />

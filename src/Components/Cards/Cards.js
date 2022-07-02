@@ -2,7 +2,7 @@ import { Typography, CardMedia, CardContent, Grid } from "@mui/material";
 import Card from "@mui/material/Card";
 import { CardActionArea, createTheme, ThemeProvider } from "@material-ui/core";
 import "../../App.css";
-import imageniglesia from "../../Images/iglesiafoto.jpeg";
+import imageniglesia from "../../Images/iglesiafoto.jpg";
 import imagencipres from "../../Images/cipres.jpeg";
 
 const theme = createTheme({
@@ -30,8 +30,8 @@ const Cards = () => {
 				justifyContent="center"
 				alignItems="center"
 				className={Grid}
-				id='lugar'
-				sx={{pt: 6}}
+				id="lugar"
+				sx={{ pt: 6 }}
 			>
 				<Grid item xs={12} sm={6} p={2}>
 					<Card>
