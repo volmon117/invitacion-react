@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.469b37d8.css",
-    "main.js": "/static/js/main.2c90ffae.js",
+    "main.css": "/static/css/main.4fbf4be6.css",
+    "main.js": "/static/js/main.63f810a2.js",
     "static/js/787.19adfa7d.chunk.js": "/static/js/787.19adfa7d.chunk.js",
+    "static/media/foto2.jpg": "/static/media/foto2.c051878ca3a383e647e3.jpg",
     "static/media/foto1.jpg": "/static/media/foto1.e7d43924aaab94a00417.jpg",
+    "static/media/iglesiafoto.jpg": "/static/media/iglesiafoto.472cd49f4bd38a6b61ee.jpg",
     "static/media/cipres.jpeg": "/static/media/cipres.5d1aa860cb0c882ca88f.jpeg",
-    "static/media/iglesiafoto.jpeg": "/static/media/iglesiafoto.50bc597035abcb7e7811.jpeg",
     "index.html": "/index.html",
-    "main.469b37d8.css.map": "/static/css/main.469b37d8.css.map",
-    "main.2c90ffae.js.map": "/static/js/main.2c90ffae.js.map",
+    "main.4fbf4be6.css.map": "/static/css/main.4fbf4be6.css.map",
+    "main.63f810a2.js.map": "/static/js/main.63f810a2.js.map",
     "787.19adfa7d.chunk.js.map": "/static/js/787.19adfa7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.469b37d8.css",
-    "static/js/main.2c90ffae.js"
+    "static/css/main.4fbf4be6.css",
+    "static/js/main.63f810a2.js"
   ]
 }
