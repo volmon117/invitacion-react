@@ -1,9 +1,10 @@
-html{
+html {
 	scroll-behavior: smooth;
 }
 .App {
 	text-align: center;
 	scroll-behavior: smooth;
+	background-color: #fbf6f3;
 }
 .Grid {
 	margin-top: 10px;
