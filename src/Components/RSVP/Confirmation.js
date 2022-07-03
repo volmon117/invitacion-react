@@ -38,28 +38,31 @@ const Rsvp = () => {
 		}
 	};
 
+	const handleSubmit2 = async (e) => {
+		e.preventDefault();
+		try {
+			const response = fetch(
+				"https://v1.nocodeapi.com/volmon117/google_sheets/eJCyvRmfsUnFJqCr?tabId=hoja1",
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify([[name, people, phone, assistence]]),
+				}
+			);
+			response.json();
+		} finally {
+			setData({ ...data, assistence: "", name: "", people: "", phone: "" });
+		}
+	};
+
 	const StyledTextField = styled(TextField)({
-		"& label": {
-			color: "black",
-		},
 		"& label.Mui-focused": {
-			color: "black",
+			color: "white",
 		},
 		"& .MuiInput-underline:after": {
-			borderBottomColor: "black",
-		},
-		"& .MuiOutlinedInput-root": {
-			color: "black",
-			"& fieldset": {
-				borderColor: "black",
-			},
-			"&:hover fieldset": {
-				borderColor: "black",
-				borderWidth: 2,
-			},
-			"&.Mui-focused fieldset": {
-				borderColor: "black",
-			},
+			borderBottomColor: "white",
 		},
 	});
 
@@ -80,10 +83,10 @@ const Rsvp = () => {
 				<Typography variant="h4">
 					Por favor ayúdanos confirmando tu asistencia.
 				</Typography>
-				<Typography variant="h5">- No niños -</Typography>
+				<Typography variant="h3">- No niños -</Typography>
 				<br />
-				<form noValidate autoComplete="off" onSubmit={handleSubmit}>
-					<StyledTextField
+				<form noValidate autoComplete="on" onSubmit={handleSubmit}>
+					<TextField
 						id="name"
 						name="name"
 						label="Nombre"
@@ -97,9 +100,10 @@ const Rsvp = () => {
 							marginRight: "10px",
 							marginBottom: "10px",
 							width: "20%",
+							filter: "#f5e8e0",
 						}}
 					/>
-					<StyledTextField
+					<TextField
 						id="people"
 						name="people"
 						label="Numero de personas"
@@ -117,9 +121,9 @@ const Rsvp = () => {
 						<MenuItem value={3}>3</MenuItem>
 						<MenuItem value={4}>4</MenuItem>
 						<MenuItem value={5}>5</MenuItem>
-					</StyledTextField>
+					</TextField>
 					<br />
-					<StyledTextField
+					<TextField
 						id="phone"
 						name="phone"
 						label="Telefono"
@@ -131,7 +135,7 @@ const Rsvp = () => {
 						size="small"
 						style={{ marginRight: "10px", width: "20%" }}
 					/>
-					<StyledTextField
+					<TextField
 						id="asistencia"
 						name="assistence"
 						label="Asistiran"
@@ -146,13 +150,13 @@ const Rsvp = () => {
 					>
 						<MenuItem value={1}>Si</MenuItem>
 						<MenuItem value={0}>No</MenuItem>
-					</StyledTextField>
+					</TextField>
 					<br />
 					<br />
 					<Button
 						variant="text"
 						style={{ backgroundColor: "#fbf6f3", color: "black" }}
-						onClick={handleSubmit}
+						onClick={handleSubmit2}
 					>
 						Confirmar assitencia
 					</Button>

@@ -6,7 +6,7 @@ const Hashtag = () => {
 	return (
 		<div className="Hashtag">
 			<Box>
-				<Typography variant="h2">#bys30sep</Typography>
+				<Typography variant="h2">#ByS30Sep</Typography>
 			</Box>
 		</div>
 	);
