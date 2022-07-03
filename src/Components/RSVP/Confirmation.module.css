@@ -1,2 +1,6 @@
-.textfield {
+.label {
+	color: black !important;
+}
+.input {
+	color: black !important;
 }

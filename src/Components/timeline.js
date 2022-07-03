@@ -43,7 +43,7 @@ const ContentBox = styled(Box)(({ theme, bgColor }) => ({
 const TimeLine = () => {
 	console.log(true);
 	return (
-		<Box id="fecha" sx={{ pt: "3.5rem" }} paddingBottom="40px">
+		<Box id="timeline" sx={{ pt: "3.5rem" }} paddingBottom="40px">
 			<Typography
 				sx={{
 					fontFamily: "'Parisienne', cursive",

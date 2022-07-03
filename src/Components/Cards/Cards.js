@@ -2,6 +2,7 @@ import { Typography, CardMedia, CardContent, Grid } from "@mui/material";
 import Card from "@mui/material/Card";
 import { CardActionArea, createTheme, ThemeProvider } from "@material-ui/core";
 import "../../App.css";
+import { Box } from "@mui/material";
 import imageniglesia from "../../Images/iglesiafoto.jpg";
 import imagencipres from "../../Images/cipres.jpeg";
 
@@ -24,51 +25,60 @@ const Cards = () => {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<Grid
-				container
-				p={6}
-				justifyContent="center"
-				alignItems="center"
-				className={Grid}
-				id="lugar"
-				sx={{ pt: 6 }}
-			>
-				<Grid item xs={12} sm={6} p={2}>
-					<Card>
-						<CardActionArea onClick={handleClickIglesia}>
-							<CardMedia
-								component="img"
-								image={imageniglesia}
-								alt="Parroquia San Pablo, Las Fuentes"
-							/>
-							<CardContent>
-								<Typography variant="h5">Iglesia</Typography>
-								<Typography variant="body2">
-									Calle San Antonio 105, Las Fuentes, 45070 Zapopan, Jal.
-								</Typography>
-							</CardContent>
-						</CardActionArea>
-					</Card>
+			<Box id="ubicacion">
+				<Grid
+					container
+					p={6}
+					justifyContent="center"
+					alignItems="center"
+					className={Grid}
+					sx={{ pt: 6 }}
+				>
+					<Grid item xs={12} sm={6} p={2}>
+						<Card>
+							<CardActionArea onClick={handleClickIglesia}>
+								<CardMedia
+									component="img"
+									image={imageniglesia}
+									alt="Parroquia San Pablo, Las Fuentes"
+								/>
+								<CardContent>
+									<Typography variant="h5">Iglesia</Typography>
+									<Typography variant="body">
+										Parroquia San Pablo las fuentes
+										<br />
+									</Typography>
+									<Typography variant="body3">
+										Calle San Antonio 105, Las Fuentes, 45070 Zapopan, Jal.
+									</Typography>
+								</CardContent>
+							</CardActionArea>
+						</Card>
+					</Grid>
+					<Grid item xs={12} sm={6} p={2}>
+						<Card>
+							<CardActionArea onClick={handleClickCipres}>
+								<CardMedia
+									component="img"
+									image={imagencipres}
+									alt="Hacienda del Cipres"
+								/>
+								<CardContent>
+									<Typography variant="h5">Salon</Typography>
+									<Typography variant="body">
+										Hacienda del Cipres
+										<br />
+									</Typography>
+									<Typography variant="body3">
+										Valle de Sta Cruz 9, Valle de Santa Cruz, 45640 Santa Cruz
+										de las Flores, Jal.
+									</Typography>
+								</CardContent>
+							</CardActionArea>
+						</Card>
+					</Grid>
 				</Grid>
-				<Grid item xs={12} sm={6} p={2}>
-					<Card>
-						<CardActionArea onClick={handleClickCipres}>
-							<CardMedia
-								component="img"
-								image={imagencipres}
-								alt="Hacienda del Cipres"
-							/>
-							<CardContent>
-								<Typography variant="h5">Salon</Typography>
-								<Typography variant="body2">
-									Valle de Sta Cruz 9, Valle de Santa Cruz, 45640 Santa Cruz de
-									las Flores, Jal.
-								</Typography>
-							</CardContent>
-						</CardActionArea>
-					</Card>
-				</Grid>
-			</Grid>
+			</Box>
 		</ThemeProvider>
 	);
 };

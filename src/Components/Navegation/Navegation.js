@@ -16,9 +16,11 @@ import { Link } from "react-scroll";
 
 const pages = [
 	{ menu: "Save the Date", id: "saveDate" },
-	{ menu: "Fecha", id: "fecha" },
-	{ menu: "Lugar", id: "lugar" },
+	{ menu: "Countdown", id: "countdown" },
+	{ menu: "Timeline", id: "timeline" },
+	{ menu: "Ubicacion", id: "ubicacion" },
 	{ menu: "Confirmacion", id: "Confirmacion" },
+	{ menu: "Hashtag", id: "hashtag" },
 ];
 
 const Navegation = () => {
@@ -109,7 +111,7 @@ const Navegation = () => {
 								<Box
 									sx={{
 										flexGrow: 1,
-										paddingLeft: "600px",
+										paddingLeft: "450px",
 										display: { xs: "none", md: "flex" },
 									}}
 								>

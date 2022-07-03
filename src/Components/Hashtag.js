@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 const Hashtag = () => {
 	return (
 		<div className="Hashtag">
-			<Box>
+			<Box id="hashtag">
 				<Typography variant="h2">#ByS30Sep</Typography>
 			</Box>
 		</div>

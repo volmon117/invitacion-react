@@ -6,6 +6,7 @@ import { Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import background from "../../Images/foto2.jpg";
 import { MenuItem } from "@mui/material";
+import style from "../RSVP/Confirmation.module.css";
 
 const Rsvp = () => {
 	const [data, setData] = useState({
@@ -91,16 +92,16 @@ const Rsvp = () => {
 						name="name"
 						label="Nombre"
 						variant="standard"
-						focused="true"
-						onChange={(e) => {
-							setData({ ...data, name: e.target.value });
-						}}
 						size="small"
+						InputLabelProps={{ className: style.label }}
 						style={{
 							marginRight: "10px",
 							marginBottom: "10px",
 							width: "20%",
 							filter: "#f5e8e0",
+						}}
+						onChange={(e) => {
+							setData({ ...data, name: e.target.value });
 						}}
 					/>
 					<TextField
@@ -108,13 +109,13 @@ const Rsvp = () => {
 						name="people"
 						label="Numero de personas"
 						variant="standard"
-						focused="true"
+						size="small"
+						select
+						style={{ width: "20%" }}
+						InputLabelProps={{ className: style.label }}
 						onChange={(e) => {
 							setData({ ...data, people: e.target.value });
 						}}
-						size="small"
-						style={{ width: "20%" }}
-						select
 					>
 						<MenuItem value={1}>1</MenuItem>
 						<MenuItem value={2}>2</MenuItem>
@@ -128,25 +129,25 @@ const Rsvp = () => {
 						name="phone"
 						label="Telefono"
 						variant="standard"
-						focused="true"
+						size="small"
+						style={{ marginRight: "10px", width: "20%" }}
+						InputLabelProps={{ className: style.label }}
 						onChange={(e) => {
 							setData({ ...data, phone: e.target.value });
 						}}
-						size="small"
-						style={{ marginRight: "10px", width: "20%" }}
 					/>
 					<TextField
 						id="asistencia"
 						name="assistence"
 						label="Asistiran"
 						variant="standard"
-						focused="true"
+						size="small"
+						select
+						style={{ width: "20%" }}
+						InputLabelProps={{ className: style.label }}
 						onChange={(e) => {
 							setData({ ...data, assistence: e.target.value });
 						}}
-						size="small"
-						style={{ width: "20%" }}
-						select
 					>
 						<MenuItem value={1}>Si</MenuItem>
 						<MenuItem value={0}>No</MenuItem>

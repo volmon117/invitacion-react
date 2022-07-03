@@ -32,8 +32,8 @@ class App extends Component {
 					<SaveTheDate />
 					<Countdown deadline={this.state.deadline} />
 					<People />
-					<Cards />
 					<TimeLine />
+					<Cards />
 					<Rsvp />
 					<Hashtag />
 					<Gifts />
