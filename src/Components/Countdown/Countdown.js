@@ -70,7 +70,6 @@ class Countdown extends Component {
 					sx={{
 						backgroundImage: `linear-gradient(to right, rgba(140, 140, 140, 0.4), rgba(140, 140, 140, 0.4)),url(${background})`,
 						padding: "320px 0 340px 0",
-						filter: "grayscale(1)",
 						backgroundPosition: "center",
 					}}
 				></Box>

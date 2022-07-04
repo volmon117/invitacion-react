@@ -75,6 +75,7 @@ const Rsvp = () => {
 					backgroundImage: `linear-gradient(to right, rgba(140, 140, 140, 0.4), rgba(140, 140, 140, 0.4)),url(${background})`,
 					padding: "250px 0 250px 0",
 					backgroundPosition: "center",
+					filter: "grayscale(1)",
 				}}
 			>
 				<Typography variant="h2">RSVP</Typography>
