@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c661e00.css",
-    "main.js": "/static/js/main.39e0a199.js",
+    "main.css": "/static/css/main.d358ed95.css",
+    "main.js": "/static/js/main.af6901b4.js",
     "static/js/787.19adfa7d.chunk.js": "/static/js/787.19adfa7d.chunk.js",
     "static/media/foto2.jpg": "/static/media/foto2.c051878ca3a383e647e3.jpg",
     "static/media/foto1.jpg": "/static/media/foto1.e7d43924aaab94a00417.jpg",
     "static/media/iglesiafoto.jpg": "/static/media/iglesiafoto.472cd49f4bd38a6b61ee.jpg",
     "static/media/cipres.jpeg": "/static/media/cipres.5d1aa860cb0c882ca88f.jpeg",
     "index.html": "/index.html",
-    "main.8c661e00.css.map": "/static/css/main.8c661e00.css.map",
-    "main.39e0a199.js.map": "/static/js/main.39e0a199.js.map",
+    "main.d358ed95.css.map": "/static/css/main.d358ed95.css.map",
+    "main.af6901b4.js.map": "/static/js/main.af6901b4.js.map",
     "787.19adfa7d.chunk.js.map": "/static/js/787.19adfa7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c661e00.css",
-    "static/js/main.39e0a199.js"
+    "static/css/main.d358ed95.css",
+    "static/js/main.af6901b4.js"
   ]
 }
