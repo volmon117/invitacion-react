@@ -1,5 +1,5 @@
 import { Typography } from "@material-ui/core";
-import { Avatar } from "@material-ui/core";
+//import { Avatar } from "@material-ui/core";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 
 const theme = createTheme({

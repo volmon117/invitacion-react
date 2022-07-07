@@ -1,4 +1,4 @@
-import { Box, styled, Typography, useMediaQuery } from "@mui/material";
+import { Box, styled, Typography } from "@mui/material";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";

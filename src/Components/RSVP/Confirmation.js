@@ -3,7 +3,6 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
-import { styled } from "@mui/material/styles";
 import background from "../../Images/foto2.jpg";
 import { MenuItem } from "@mui/material";
 import style from "../RSVP/Confirmation.module.css";
@@ -31,41 +30,11 @@ const Rsvp = () => {
 				}
 			);
 			await response.json();
-			{
-				setData({ ...data, assistence: "", name: "", people: "", phone: "" });
-			}
+			setData({ ...data, assistence: "", name: "", people: "", phone: "" });
 		} catch (err) {
 			console.log(err);
 		}
 	};
-
-	const handleSubmit2 = async (e) => {
-		e.preventDefault();
-		try {
-			const response = fetch(
-				"https://v1.nocodeapi.com/volmon117/google_sheets/eJCyvRmfsUnFJqCr?tabId=hoja1",
-				{
-					method: "POST",
-					headers: {
-						"Content-Type": "application/json",
-					},
-					body: JSON.stringify([[name, people, phone, assistence]]),
-				}
-			);
-			response.json();
-		} finally {
-			setData({ ...data, assistence: "", name: "", people: "", phone: "" });
-		}
-	};
-
-	const StyledTextField = styled(TextField)({
-		"& label.Mui-focused": {
-			color: "white",
-		},
-		"& .MuiInput-underline:after": {
-			borderBottomColor: "white",
-		},
-	});
 
 	return (
 		<div class="form">
@@ -158,7 +127,7 @@ const Rsvp = () => {
 					<Button
 						variant="text"
 						style={{ backgroundColor: "#fbf6f3", color: "black" }}
-						onClick={handleSubmit2}
+						onClick={handleSubmit}
 					>
 						Confirmar assitencia
 					</Button>

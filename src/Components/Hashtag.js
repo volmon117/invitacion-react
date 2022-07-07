@@ -1,6 +1,6 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import { Box, IconButton } from "@mui/material";
+import { Box } from "@mui/material";
 import { FaInstagramSquare } from "react-icons/fa";
 import { SiFacebook } from "react-icons/si";
 
