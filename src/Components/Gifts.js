@@ -4,6 +4,7 @@ import { Box, Grid } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import { CardContent } from "@mui/material";
+import CardActionArea from "@mui/material/CardActionArea";
 import bbva from "../Images/bbva.jpeg";
 
 const Gifts = () => {
@@ -14,27 +15,29 @@ const Gifts = () => {
 				<br />
 				Por lo que les agradecemos sus regalos sean a travez de la cuenta BBVA
 				<br />
-				si no en la ceremonia contaremos con una lluvia de sobres
+				de igual manera en la ceremonia contaremos con una lluvia de sobres
 				<br />
-				La lluvia de sobres es la tradicion de regalar dinero en efectivo a los
-				novios en un sobre el dia del evento
-				<Grid container justifyContent="center">
-					<Card
+				La cual es la tradicion de regalar dinero en efectivo a los novios en un
+				sobre el dia del evento
+			</Typography>
+			<Grid container justifyContent="center" paddingTop={"20px"}>
+				<Card>
+					<CardActionArea
 						onClick={() => {
 							navigator.clipboard.writeText("012320015078156144");
 						}}
 					>
-						<CardMedia component="img" image={bbva}></CardMedia>
+						<CardMedia component="img" image={bbva} height="100px"></CardMedia>
 						<CardContent>
-							<body>
-								Cuenta clave 012320015078156144
+							<h5>
+								012320015078156144
 								<br />
 								click para copiar
-							</body>
+							</h5>
 						</CardContent>
-					</Card>
-				</Grid>
-			</Typography>
+					</CardActionArea>
+				</Card>
+			</Grid>
 		</Box>
 	);
 };
