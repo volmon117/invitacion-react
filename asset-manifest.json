@@ -1,19 +1,28 @@
 {
   "files": {
     "main.css": "/static/css/main.d358ed95.css",
-    "main.js": "/static/js/main.3d7572c1.js",
+    "main.js": "/static/js/main.e86c756f.js",
     "static/js/787.19adfa7d.chunk.js": "/static/js/787.19adfa7d.chunk.js",
     "static/media/foto2.jpg": "/static/media/foto2.c051878ca3a383e647e3.jpg",
     "static/media/foto1.jpg": "/static/media/foto1.e7d43924aaab94a00417.jpg",
     "static/media/iglesiafoto.jpg": "/static/media/iglesiafoto.472cd49f4bd38a6b61ee.jpg",
     "static/media/cipres.jpeg": "/static/media/cipres.5d1aa860cb0c882ca88f.jpeg",
+    "static/media/codigo.png": "/static/media/codigo.3194a69cd552d8774c9f.png",
+    "static/media/restaurante.png": "/static/media/restaurante.fa45a48e320e09a6b082.png",
+    "static/media/pista.png": "/static/media/pista.9b10ed48570a9d14defc.png",
+    "static/media/salud.png": "/static/media/salud.80ee0cb204bc45358085.png",
+    "static/media/baile.png": "/static/media/baile.3c85c57639522b8eb13e.png",
+    "static/media/novio.png": "/static/media/novio.0dcd8268e3a66fe25280.png",
+    "static/media/martini.png": "/static/media/martini.cc3eb0de46fe1a9bf46b.png",
+    "static/media/iglesia.png": "/static/media/iglesia.4bb98127a9e9c6633c72.png",
+    "static/media/novia.webp": "/static/media/novia.dd50333d8ddfc4f28850.webp",
     "index.html": "/index.html",
     "main.d358ed95.css.map": "/static/css/main.d358ed95.css.map",
-    "main.3d7572c1.js.map": "/static/js/main.3d7572c1.js.map",
+    "main.e86c756f.js.map": "/static/js/main.e86c756f.js.map",
     "787.19adfa7d.chunk.js.map": "/static/js/787.19adfa7d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d358ed95.css",
-    "static/js/main.3d7572c1.js"
+    "static/js/main.e86c756f.js"
   ]
 }
