@@ -15,9 +15,11 @@ const pages = [
 	{ menu: "Save the Date", id: "saveDate" },
 	{ menu: "Countdown", id: "countdown" },
 	{ menu: "Timeline", id: "timeline" },
-	{ menu: "Ubicacion", id: "ubicacion" },
-	{ menu: "Confirmacion", id: "Confirmacion" },
+	{ menu: "Ubicación", id: "ubicacion" },
+	{ menu: "Confirmación", id: "Confirmacion" },
 	{ menu: "Hashtag", id: "hashtag" },
+	{ menu: "Regalos", id: "Regalos" },
+	{ menu: "Vestimenta", id: "Codigo" },
 ];
 
 const Navegation = () => {

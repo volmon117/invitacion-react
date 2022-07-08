@@ -6,6 +6,7 @@ import { Box } from "@mui/material";
 import background from "../../Images/foto2.jpg";
 import { MenuItem } from "@mui/material";
 import style from "../RSVP/Confirmation.module.css";
+import { useEffect } from "react";
 
 const Rsvp = () => {
 	const [data, setData] = useState({
@@ -30,11 +31,17 @@ const Rsvp = () => {
 				}
 			);
 			await response.json();
-			setData({ ...data, assistence: "", name: "", people: "", phone: "" });
+			setData({ assistence: "", name: "", people: "", phone: "" });
+
+			console.log(data);
 		} catch (err) {
 			console.log(err);
 		}
 	};
+
+	// useEffect = () => {
+	// 	setData({ assistence: "", name: "", people: "", phone: "" });
+	// };
 
 	return (
 		<div class="form">
@@ -71,7 +78,7 @@ const Rsvp = () => {
 							filter: "#f5e8e0",
 						}}
 						onChange={(e) => {
-							setData({ ...data, name: e.target.value });
+							setData({ name: e.target.value });
 						}}
 					/>
 					<TextField
@@ -84,7 +91,7 @@ const Rsvp = () => {
 						style={{ width: "20%" }}
 						InputLabelProps={{ className: style.label }}
 						onChange={(e) => {
-							setData({ ...data, people: e.target.value });
+							setData({ people: e.target.value });
 						}}
 					>
 						<MenuItem value={1}>1</MenuItem>
@@ -103,7 +110,7 @@ const Rsvp = () => {
 						style={{ marginRight: "10px", width: "20%" }}
 						InputLabelProps={{ className: style.label }}
 						onChange={(e) => {
-							setData({ ...data, phone: e.target.value });
+							setData({ phone: e.target.value });
 						}}
 					/>
 					<TextField
@@ -116,7 +123,7 @@ const Rsvp = () => {
 						style={{ width: "20%" }}
 						InputLabelProps={{ className: style.label }}
 						onChange={(e) => {
-							setData({ ...data, assistence: e.target.value });
+							setData({ assistence: e.target.value });
 						}}
 					>
 						<MenuItem value={1}>Si</MenuItem>
@@ -129,7 +136,7 @@ const Rsvp = () => {
 						style={{ backgroundColor: "#fbf6f3", color: "black" }}
 						onClick={handleSubmit}
 					>
-						Confirmar assitencia
+						Confirmar asistencia
 					</Button>
 					<br />
 				</form>

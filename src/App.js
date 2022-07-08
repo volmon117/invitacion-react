@@ -8,6 +8,7 @@ import Cards from "./Components/Cards/Cards";
 import Rsvp from "./Components/RSVP/Confirmation";
 import Hashtag from "./Components/Hashtag";
 import Gifts from "./Components/Gifts";
+import Codigo from "./Components/Codigo";
 
 import "./App.css";
 import { createTheme, ThemeProvider } from "@material-ui/core";
@@ -37,6 +38,7 @@ class App extends Component {
 					<Rsvp />
 					<Hashtag />
 					<Gifts />
+					<Codigo />
 				</div>
 			</ThemeProvider>
 		);

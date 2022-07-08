@@ -9,7 +9,7 @@ import bbva from "../Images/bbva.jpeg";
 
 const Gifts = () => {
 	return (
-		<Box paddingBottom="100px">
+		<Box disableGutters justifyContent={"center"} id="Regalos">
 			<Typography variant="h3">
 				Emprenderemos una aventura juntos fuera del pais,
 				<br />

@@ -1,6 +1,8 @@
 import { Typography } from "@material-ui/core";
-//import { Avatar } from "@material-ui/core";
 import { createTheme, ThemeProvider } from "@material-ui/core";
+import { Box } from "@mui/material";
+import novia from "../Images/novia.webp";
+import novio from "../Images/novio.png";
 
 const theme = createTheme({
 	typography: {
@@ -10,14 +12,14 @@ const theme = createTheme({
 
 const People = () => {
 	return (
-		<p>
+		<Box paddingBottom="200px">
 			<ThemeProvider theme={theme}>
 				<Typography variant="h3">
 					Con la bendicion de dios y de nuestros padres
 				</Typography>
 			</ThemeProvider>
 			<br />
-			{/* <Avatar src="../Images/novia.webp" /> */}
+			<img src={novia} height={100} width={100} alt="" />
 			<br />
 			<Typography variant="h4">
 				Juana Yañez Olea
@@ -27,9 +29,7 @@ const People = () => {
 				Alfredo Ponce Olivo
 			</Typography>
 			<br />
-			{/* <Icon>
-
-      </Icon> */}
+			<img src={novio} height={100} width={100} alt="" />
 			<br />
 			<Typography variant="h4">
 				Maria de Jesus Hernandez Mendez
@@ -52,7 +52,7 @@ const People = () => {
 				J. Jesus Pompa Reyna
 			</Typography>
 			<br />
-		</p>
+		</Box>
 	);
 };
 

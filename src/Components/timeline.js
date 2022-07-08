@@ -5,6 +5,12 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+import copas from "../Images/salud.png";
+import baile from "../Images/baile.png";
+import martini from "../Images/martini.png";
+import plato from "../Images/restaurante.png";
+import iglesia from "../Images/iglesia.png";
+import pista from "../Images/pista.png";
 
 const Outline = styled(Box)(({ theme }) => ({
 	position: "relative",
@@ -47,7 +53,7 @@ const TimeLine = () => {
 			<Typography
 				sx={{
 					fontFamily: "'Parisienne', cursive",
-					fontSize: "5rem",
+					fontSize: "10rem !important",
 					color: "#dfb9a6",
 					mb: 6,
 				}}
@@ -60,8 +66,7 @@ const TimeLine = () => {
 						<TimelineDot
 							sx={{
 								backgroundColor: "#f5e8e0",
-								backgroundImage:
-									'url("https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/secured-attachments/message/attachments/e290cfd03b8cf1e404cbe0a7c84991ac-1655565926705/iglesia.png?__cld_token__=exp=1656896060~hmac=461bf83106994dccb7bbbb055c6d00aa381eda88965699b1ade3c00073be589c")',
+								backgroundImage: `url(${iglesia})`,
 								backgroundPosition: "center",
 								backgroundSize: "cover",
 								height: {
@@ -130,8 +135,7 @@ const TimeLine = () => {
 						<TimelineDot
 							sx={{
 								backgroundColor: "#f5e8e0",
-								backgroundImage:
-									'url("https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/secured-attachments/message/attachments/e290cfd03b8cf1e404cbe0a7c84991ac-1655565926705/martini-seco.png?__cld_token__=exp=1656896060~hmac=da0d66836a5e484b320827c1096e3105bc0f28aadf348df6716cba89455b81d4")',
+								backgroundImage: `url(${martini})`,
 								backgroundPosition: "center",
 								backgroundSize: "cover",
 								height: {
@@ -179,7 +183,6 @@ const TimeLine = () => {
 									>
 										9:00 PM
 									</Typography>
-
 									<Typography variant="body1" sx={{ color: "#7f7f7f" }}>
 										Barra de cocteleria
 									</Typography>
@@ -193,8 +196,7 @@ const TimeLine = () => {
 						<TimelineDot
 							sx={{
 								backgroundColor: "#f5e8e0",
-								backgroundImage:
-									'url("https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/secured-attachments/message/attachments/e290cfd03b8cf1e404cbe0a7c84991ac-1655565926699/baile.png?__cld_token__=exp=1656896060~hmac=fb091a76e06457a3ee00d5c6b92bcd657ce46bc1db2d44d1f69c7ab668f16a02")',
+								backgroundImage: `url(${baile})`,
 								backgroundPosition: "center",
 								backgroundSize: "cover",
 								height: "100px",
@@ -246,8 +248,7 @@ const TimeLine = () => {
 						<TimelineDot
 							sx={{
 								backgroundColor: "#f5e8e0",
-								backgroundImage:
-									'url("https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/secured-attachments/message/attachments/e290cfd03b8cf1e404cbe0a7c84991ac-1655565926696/restaurante.png?__cld_token__=exp=1656896060~hmac=dd91d7e8c3f319d6d8d47fb0b3828fab40be279fa81e43a96e7e40d7a3e7ed55")',
+								backgroundImage: `url(${plato})`,
 								backgroundPosition: "center",
 								backgroundSize: "cover",
 								height: "100px",
@@ -299,8 +300,7 @@ const TimeLine = () => {
 						<TimelineDot
 							sx={{
 								backgroundColor: "#f5e8e0",
-								backgroundImage:
-									'url("https://cdn-icons-png.flaticon.com/512/7615/7615072.png")',
+								backgroundImage: `url(${pista})`,
 								backgroundPosition: "center",
 								backgroundSize: "cover",
 								height: "100px",
@@ -352,8 +352,7 @@ const TimeLine = () => {
 						<TimelineDot
 							sx={{
 								backgroundColor: "#f5e8e0",
-								backgroundImage:
-									'url("https://cdn-icons-png.flaticon.com/512/5110/5110778.png")',
+								backgroundImage: `url(${copas})`,
 								backgroundPosition: "center",
 								backgroundSize: "cover",
 								height: {
