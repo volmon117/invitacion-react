@@ -46,14 +46,14 @@ const Rsvp = () => {
 					backgroundPosition: "center",
 				}}
 			>
-				<Typography variant="h2">RSVP</Typography>
-				<Typography variant="h4">
+				<Typography variant="h2" style={{ color: "#f5e8e0" }}>RSVP</Typography>
+				<Typography variant="h3" style={{ color: "#f5e8e0" }}>
 					¡Queremos compartir este momento tan esperado contigo!
 				</Typography>
-				<Typography variant="h4">
+				<Typography variant="h4" style={{ color: "#f5e8e0" }}>
 					Por favor ayúdanos confirmando tú asistencia.
 				</Typography>
-				<Typography variant="h3">- No niños -</Typography>
+				<Typography variant="h3" style={{ color: "#f5e8e0" }}>- No niños -</Typography>
 				<br />
 				<form noValidate autoComplete="on" onSubmit={handleSubmit}>
 					<TextField

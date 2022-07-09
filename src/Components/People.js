@@ -32,11 +32,11 @@ const People = () => {
 			<img src={novio} height={100} width={100} alt="" />
 			<br />
 			<Typography variant="h4">
-				Maria de Jesus Hernandez Mendez
+				Maria de Jesús Hernández Méndez
 				<br />
 				&
 				<br />
-				Santiago Del Blanco Chavez
+				Santiago Del Blanco Chávez
 			</Typography>
 			<Typography variant="h3">
 				<br />
@@ -45,7 +45,7 @@ const People = () => {
 				<br />
 			</Typography>
 			<Typography variant="h4">
-				Patricia Adela Hernandez Mendez
+				Patricia Adela Hernández Méndez
 				<br />
 				&
 				<br />
