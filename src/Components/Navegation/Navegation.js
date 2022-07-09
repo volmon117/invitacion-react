@@ -80,8 +80,16 @@ const Navegation = () => {
 							}}
 						>
 							{pages.map((page) => (
-								<MenuItem key={page.id} onClick={handleCloseNavMenu}>
-									<Typography textAlign="center">{page.menu}</Typography>
+								<MenuItem key={page.id} onClick={handleCloseNavMenu} >
+									<Link
+									activeClass="active"
+									to={page.id}
+									spy={true}
+									smooth={true}
+									style={{ textDecoration: "none", color: "black" }}
+								>
+									{page.menu}
+								</Link>
 								</MenuItem>
 							))}
 						</Menu>

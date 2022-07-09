@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import { CardContent } from "@mui/material";
 import CardActionArea from "@mui/material/CardActionArea";
 import bbva from "../Images/bbva.jpeg";
+import dinero from "../Images/dinero.png";
 
 const Gifts = () => {
 	return (
@@ -13,13 +14,15 @@ const Gifts = () => {
 			<Typography variant="h3">
 				Emprenderemos una aventura juntos fuera del pais,
 				<br />
-				Por lo que les agradecemos sus regalos sean a travez de la cuenta BBVA
+				Por lo que les agradecemos sus regalos sean a través de la cuenta BBVA
 				<br />
 				de igual manera en la ceremonia contaremos con una lluvia de sobres
 				<br />
 				La cual es la tradicion de regalar dinero en efectivo a los novios en un
 				sobre el dia del evento
 			</Typography>
+			<br />
+			<img src={dinero} height={100} width={100} alt="" />
 			<Grid container justifyContent="center" paddingTop={"20px"}>
 				<Card>
 					<CardActionArea

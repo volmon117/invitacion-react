@@ -15,7 +15,7 @@ const People = () => {
 		<Box paddingBottom="200px">
 			<ThemeProvider theme={theme}>
 				<Typography variant="h3">
-					Con la bendicion de dios y de nuestros padres
+					Con la bendición de Díos y de nuestros padres
 				</Typography>
 			</ThemeProvider>
 			<br />
@@ -40,7 +40,7 @@ const People = () => {
 			</Typography>
 			<Typography variant="h3">
 				<br />
-				En Compania de nuestros padrinos
+				En Compañía de nuestros padrinos
 				<br />
 				<br />
 			</Typography>

@@ -6,7 +6,7 @@ import { SiFacebook } from "react-icons/si";
 
 const Hashtag = () => {
 	return (
-		<Box disableGutters justifyContent="center">
+		<Box disableGutters justifyContent="center" id="hashtag">
 			<Box
 				justifyContent="center"
 				p={10}
@@ -23,6 +23,7 @@ const Hashtag = () => {
 						instagram
 					</Typography>
 					<Typography variant="h2">#BodaBrisia&Santiago2022</Typography>
+					<Typography variant="h3">Agrega tus fotos a este <a href="https://photos.app.goo.gl/Tx96HMCNxx1t9SmG8">album</a> </Typography>
 					<FaInstagramSquare style={{ fontSize: "50px", color: "#F85043" }} />
 					<SiFacebook
 						style={{ fontSize: "50px", color: "#1195F5", marginRight: "20px" }}

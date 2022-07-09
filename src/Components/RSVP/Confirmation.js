@@ -3,10 +3,9 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
-import background from "../../Images/foto2.jpg";
+import background from "../../Images/foto3.jpg";
 import { MenuItem } from "@mui/material";
 import style from "../RSVP/Confirmation.module.css";
-import { useEffect } from "react";
 
 const Rsvp = () => {
 	const [data, setData] = useState({
@@ -32,16 +31,10 @@ const Rsvp = () => {
 			);
 			await response.json();
 			setData({ assistence: "", name: "", people: "", phone: "" });
-
-			console.log(data);
 		} catch (err) {
 			console.log(err);
 		}
 	};
-
-	// useEffect = () => {
-	// 	setData({ assistence: "", name: "", people: "", phone: "" });
-	// };
 
 	return (
 		<div class="form">
@@ -51,7 +44,6 @@ const Rsvp = () => {
 					backgroundImage: `linear-gradient(to right, rgba(140, 140, 140, 0.4), rgba(140, 140, 140, 0.4)),url(${background})`,
 					padding: "250px 0 250px 0",
 					backgroundPosition: "center",
-					//filter: "grayscale(1)",
 				}}
 			>
 				<Typography variant="h2">RSVP</Typography>
@@ -59,7 +51,7 @@ const Rsvp = () => {
 					¡Queremos compartir este momento tan esperado contigo!
 				</Typography>
 				<Typography variant="h4">
-					Por favor ayúdanos confirmando tu asistencia.
+					Por favor ayúdanos confirmando tú asistencia.
 				</Typography>
 				<Typography variant="h3">- No niños -</Typography>
 				<br />
@@ -70,6 +62,7 @@ const Rsvp = () => {
 						label="Nombre"
 						variant="standard"
 						size="small"
+						value={data.name}
 						InputLabelProps={{ className: style.label }}
 						style={{
 							marginRight: "10px",
@@ -78,7 +71,7 @@ const Rsvp = () => {
 							filter: "#f5e8e0",
 						}}
 						onChange={(e) => {
-							setData({ name: e.target.value });
+							setData({ ...data, name: e.target.value });
 						}}
 					/>
 					<TextField
@@ -89,9 +82,10 @@ const Rsvp = () => {
 						size="small"
 						select
 						style={{ width: "20%" }}
+						value={data.people}
 						InputLabelProps={{ className: style.label }}
 						onChange={(e) => {
-							setData({ people: e.target.value });
+							setData({ ...data, people: e.target.value });
 						}}
 					>
 						<MenuItem value={1}>1</MenuItem>
@@ -104,26 +98,28 @@ const Rsvp = () => {
 					<TextField
 						id="phone"
 						name="phone"
-						label="Telefono"
+						label="Teléfono"
 						variant="standard"
 						size="small"
+						value={data.phone}
 						style={{ marginRight: "10px", width: "20%" }}
 						InputLabelProps={{ className: style.label }}
 						onChange={(e) => {
-							setData({ phone: e.target.value });
+							setData({ ...data, phone: e.target.value });
 						}}
 					/>
 					<TextField
 						id="asistencia"
 						name="assistence"
-						label="Asistiran"
+						label="Asistirán"
 						variant="standard"
 						size="small"
 						select
+						value={data.assistence}
 						style={{ width: "20%" }}
 						InputLabelProps={{ className: style.label }}
 						onChange={(e) => {
-							setData({ assistence: e.target.value });
+							setData({ ...data, assistence: e.target.value });
 						}}
 					>
 						<MenuItem value={1}>Si</MenuItem>

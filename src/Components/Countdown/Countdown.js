@@ -2,6 +2,7 @@ import { Typography, Box } from "@mui/material";
 import React, { Component } from "react";
 import styles from "./countdown.module.css";
 import background from "../../Images/foto2.jpg";
+import { Card, CardMedia } from "@material-ui/core";
 
 class Countdown extends Component {
 	constructor(props) {
@@ -49,7 +50,7 @@ class Countdown extends Component {
 				<Typography
 					className={styles.Component}
 					fontFamily="Tangerine"
-					variant="h4"
+					variant="h3"
 					component="div"
 				>
 					{this.leading0(this.state.days)} Dias‎ ‎ ‎
@@ -65,15 +66,17 @@ class Countdown extends Component {
 				<br />
 				<br />
 				<br />
-				<Box
+				{/* <Box
 					id="saveDate"
 					sx={{
-						backgroundImage: `linear-gradient(to right, rgba(140, 140, 140, 0.4), rgba(140, 140, 140, 0.4)),url(${background})`,
+						backgroundImage: `url(${background})`,
 						padding: "320px 0 340px 0",
 						backgroundPosition: "center",
-						filter: "grayscale(1)",
 					}}
-				></Box>
+				></Box> */}
+				<Card >
+					<CardMedia component="img" image={background} />
+				</Card>
 				<br />
 				<br />
 				<br />

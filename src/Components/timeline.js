@@ -54,7 +54,7 @@ const TimeLine = () => {
 				sx={{
 					fontFamily: "'Parisienne', cursive",
 					fontSize: "10rem !important",
-					color: "#dfb9a6",
+					color: "#85351c",
 					mb: 6,
 				}}
 			>
@@ -98,7 +98,7 @@ const TimeLine = () => {
 										color="#85351c"
 										sx={{
 											fontFamily: "'Parisienne', cursive",
-											fontSize: "2rem",
+											fontSize: "2rem !important",
 										}}
 									>
 										Ceremonia Religiosa
@@ -109,7 +109,7 @@ const TimeLine = () => {
 											my: 3.5,
 											textTransform: "uppercase",
 											color: "rgb(127, 127, 127)",
-											fontSize: "12px",
+											fontSize: "1.5rem !important",
 											letterSpacing: "0.1rem",
 										}}
 									>
@@ -121,6 +121,7 @@ const TimeLine = () => {
 											mb: 1,
 											color: "#7f7f7f",
 											fontWeight: "bold",
+											fontSize: "1.5rem !important",
 										}}
 									>
 										Parroquia San Pablo las fuentes
@@ -156,7 +157,7 @@ const TimeLine = () => {
 							}}
 						/>
 					</TimelineSeparator>
-					<TimelineContent sx={{ display: "flex", justifyContent: "flex-end" }}>
+					<TimelineContent sx={{ display: "flex", justifyContent: "flex-end", height: "50%"}}>
 						<Outline>
 							<Square reverse />
 							<ContentBox bgColor="#fbf6f3">
@@ -166,7 +167,7 @@ const TimeLine = () => {
 										color="#85351c"
 										sx={{
 											fontFamily: "'Parisienne', cursive",
-											fontSize: "2rem",
+											fontSize: "2rem !important",
 										}}
 									>
 										Recepción
@@ -177,13 +178,13 @@ const TimeLine = () => {
 											my: 3.5,
 											textTransform: "uppercase",
 											color: "rgb(127, 127, 127)",
-											fontSize: "12px",
+											fontSize: "1.5rem !important",
 											letterSpacing: "0.1rem",
 										}}
 									>
 										9:00 PM
 									</Typography>
-									<Typography variant="body1" sx={{ color: "#7f7f7f" }}>
+									<Typography variant="body1" sx={{ color: "#7f7f7f", fontSize: "1.5rem !important" }}>
 										Barra de cocteleria
 									</Typography>
 								</Box>
@@ -221,7 +222,7 @@ const TimeLine = () => {
 										color="#85351c"
 										sx={{
 											fontFamily: "'Parisienne', cursive",
-											fontSize: "2rem",
+											fontSize: "2rem !important",
 										}}
 									>
 										Vals novios
@@ -232,7 +233,7 @@ const TimeLine = () => {
 											my: 3.5,
 											textTransform: "uppercase",
 											color: "rgb(127, 127, 127)",
-											fontSize: "12px",
+											fontSize: "1.5rem !important",
 											letterSpacing: "0.1rem",
 										}}
 									>
@@ -263,7 +264,7 @@ const TimeLine = () => {
 							}}
 						/>
 					</TimelineSeparator>
-					<TimelineContent sx={{ display: "flex", justifyContent: "flex-end" }}>
+					<TimelineContent sx={{ display: "flex", justifyContent: "flex-end", height: "50%" }}>
 						<Outline>
 							<Square reverse />
 							<ContentBox bgColor="#fbf6f3">
@@ -273,7 +274,7 @@ const TimeLine = () => {
 										color="#85351c"
 										sx={{
 											fontFamily: "'Parisienne', cursive",
-											fontSize: "2rem",
+											fontSize: "2rem !important",
 										}}
 									>
 										Banquete
@@ -284,7 +285,7 @@ const TimeLine = () => {
 											my: 3.5,
 											textTransform: "uppercase",
 											color: "rgb(127, 127, 127)",
-											fontSize: "12px",
+											fontSize: "1.5rem !important",
 											letterSpacing: "0.1rem",
 										}}
 									>
@@ -325,7 +326,7 @@ const TimeLine = () => {
 										color="#85351c"
 										sx={{
 											fontFamily: "'Parisienne', cursive",
-											fontSize: "2rem",
+											fontSize: "2rem !important",
 										}}
 									>
 										Apertura de pista
@@ -336,7 +337,7 @@ const TimeLine = () => {
 											my: 3.5,
 											textTransform: "uppercase",
 											color: "rgb(127, 127, 127)",
-											fontSize: "12px",
+											fontSize: "1.5rem !important",
 											letterSpacing: "0.1rem",
 										}}
 									>
@@ -373,7 +374,7 @@ const TimeLine = () => {
 							}}
 						/>
 					</TimelineSeparator>
-					<TimelineContent sx={{ display: "flex", justifyContent: "flex-end" }}>
+					<TimelineContent sx={{ display: "flex", justifyContent: "flex-end", height: "50%" }}>
 						<Outline>
 							<Square reverse />
 							<ContentBox bgColor="#fbf6f3">
@@ -383,7 +384,7 @@ const TimeLine = () => {
 										color="#85351c"
 										sx={{
 											fontFamily: "'Parisienne', cursive",
-											fontSize: "2rem",
+											fontSize: "2rem !important",
 										}}
 									>
 										Fin del Evento
@@ -394,7 +395,7 @@ const TimeLine = () => {
 											my: 3.5,
 											textTransform: "uppercase",
 											color: "rgb(127, 127, 127)",
-											fontSize: "12px",
+											fontSize: "1.5rem !important",
 											letterSpacing: "0.1rem",
 										}}
 									>
