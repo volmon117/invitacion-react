@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.685228f3.css",
-    "main.js": "/static/js/main.0120be53.js",
+    "main.js": "/static/js/main.192173f2.js",
     "static/js/787.19adfa7d.chunk.js": "/static/js/787.19adfa7d.chunk.js",
-    "static/media/foto3.jpg": "/static/media/foto3.2f4117b46b9168415779.jpg",
+    "static/media/foto3.jpg": "/static/media/foto3.b18d84124020290eebe5.jpg",
     "static/media/foto1.jpg": "/static/media/foto1.e7d43924aaab94a00417.jpg",
     "static/media/foto2.jpg": "/static/media/foto2.b3c0030332afde17de03.jpg",
     "static/media/iglesiafoto.jpg": "/static/media/iglesiafoto.472cd49f4bd38a6b61ee.jpg",
@@ -14,17 +14,18 @@
     "static/media/pista.png": "/static/media/pista.9b10ed48570a9d14defc.png",
     "static/media/salud.png": "/static/media/salud.80ee0cb204bc45358085.png",
     "static/media/baile.png": "/static/media/baile.3c85c57639522b8eb13e.png",
+    "static/media/dinero.png": "/static/media/dinero.cd895ebcd1d1b01412e2.png",
     "static/media/novio.png": "/static/media/novio.0dcd8268e3a66fe25280.png",
     "static/media/martini.png": "/static/media/martini.cc3eb0de46fe1a9bf46b.png",
     "static/media/iglesia.png": "/static/media/iglesia.4bb98127a9e9c6633c72.png",
     "static/media/novia.webp": "/static/media/novia.dd50333d8ddfc4f28850.webp",
     "index.html": "/index.html",
     "main.685228f3.css.map": "/static/css/main.685228f3.css.map",
-    "main.0120be53.js.map": "/static/js/main.0120be53.js.map",
+    "main.192173f2.js.map": "/static/js/main.192173f2.js.map",
     "787.19adfa7d.chunk.js.map": "/static/js/787.19adfa7d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.685228f3.css",
-    "static/js/main.0120be53.js"
+    "static/js/main.192173f2.js"
   ]
 }
