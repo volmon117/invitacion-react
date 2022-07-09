@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.685228f3.css",
-    "main.js": "/static/js/main.192173f2.js",
+    "main.css": "/static/css/main.94b01461.css",
+    "main.js": "/static/js/main.3835f953.js",
     "static/js/787.19adfa7d.chunk.js": "/static/js/787.19adfa7d.chunk.js",
     "static/media/foto3.jpg": "/static/media/foto3.b18d84124020290eebe5.jpg",
     "static/media/foto1.jpg": "/static/media/foto1.e7d43924aaab94a00417.jpg",
@@ -20,12 +20,12 @@
     "static/media/iglesia.png": "/static/media/iglesia.4bb98127a9e9c6633c72.png",
     "static/media/novia.webp": "/static/media/novia.dd50333d8ddfc4f28850.webp",
     "index.html": "/index.html",
-    "main.685228f3.css.map": "/static/css/main.685228f3.css.map",
-    "main.192173f2.js.map": "/static/js/main.192173f2.js.map",
+    "main.94b01461.css.map": "/static/css/main.94b01461.css.map",
+    "main.3835f953.js.map": "/static/js/main.3835f953.js.map",
     "787.19adfa7d.chunk.js.map": "/static/js/787.19adfa7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.685228f3.css",
-    "static/js/main.192173f2.js"
+    "static/css/main.94b01461.css",
+    "static/js/main.3835f953.js"
   ]
 }
