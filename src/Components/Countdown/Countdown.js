@@ -1,4 +1,4 @@
-import { Typography, Box } from "@mui/material";
+import { Typography } from "@mui/material";
 import React, { Component } from "react";
 import styles from "./countdown.module.css";
 import background from "../../Images/foto2.jpg";

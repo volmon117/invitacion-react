@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 
-import Navegation from "./Components/Navegation/Navegation";
-import Countdown from "./Components/Countdown/Countdown";
+//import Navegation from "./Components/Navegation/Navegation";
+//import Countdown from "./Components/Countdown/Countdown";
 import SaveTheDate from "./Components/SaveTheDate";
-import People from "./Components/People";
+//import People from "./Components/People";
 import Cards from "./Components/Cards/Cards";
 import Rsvp from "./Components/RSVP/Confirmation";
-import Hashtag from "./Components/Hashtag";
-import Gifts from "./Components/Gifts";
-import Codigo from "./Components/Codigo";
+//import Hashtag from "./Components/Hashtag";
+//import Gifts from "./Components/Gifts";
+//import Codigo from "./Components/Codigo";
 
 import "./App.css";
 import { createTheme, ThemeProvider } from "@material-ui/core";
-import TimeLine from "./Components/timeline";
+//import TimeLine from "./Components/timeline";
 
 const theme = createTheme({
 	typography: {
@@ -29,16 +29,16 @@ class App extends Component {
 		return (
 			<ThemeProvider theme={theme}>
 				<div className="App">
-					<Navegation />
+					{/*(<Navegation />)*/}
 					<SaveTheDate />
-					<Countdown deadline={this.state.deadline} />
-					<People />
-					<TimeLine />
+					{/*<Countdown deadline={this.state.deadline} />*/}
+					{/*<People />*/}
+					{/*<TimeLine />*/}
 					<Cards />
 					<Rsvp />
-					<Hashtag />
-					<Gifts />
-					<Codigo />
+					{/*<Hashtag />*/}
+					{/*<Gifts />*/}
+					{/*<Codigo />*/}
 				</div>
 			</ThemeProvider>
 		);

@@ -4,7 +4,7 @@ import { CardActionArea, createTheme, ThemeProvider } from "@material-ui/core";
 import "../../App.css";
 import { Box } from "@mui/material";
 import imageniglesia from "../../Images/iglesiafoto.jpg";
-import imagencipres from "../../Images/cipres.jpeg";
+import imagencipres from "../../Images/salon.jpg";
 
 const theme = createTheme({
 	typography: {
@@ -14,13 +14,11 @@ const theme = createTheme({
 
 const Cards = () => {
 	const handleClickIglesia = () => {
-		window.open(
-			"https://www.google.com/maps/place/Parroquia+San+Pablo,+Las+Fuentes/@20.6238022,-103.4299002,17z/data=!3m1!4b1!4m5!3m4!1s0x8428ac5d510cac13:0xf1ea942b511ac58d!8m2!3d20.6238144!4d-103.4276744"
-		);
+		window.open("https://maps.app.goo.gl/GmxfqyroY19PeLzg6");
 	};
 
 	const handleClickCipres = () => {
-		window.open("https://goo.gl/maps/yWNKJ4yhFgZkZrWe7");
+		window.open("https://maps.app.goo.gl/MwqaebAoYD6diPn18");
 	};
 
 	return (
@@ -45,11 +43,11 @@ const Cards = () => {
 								<CardContent>
 									<Typography variant="h5">Iglesia</Typography>
 									<Typography variant="body">
-										Parroquia San Pablo las fuentes
+										Parroquia Santo Tomas Moro
 										<br />
 									</Typography>
 									<Typography variant="body3">
-										Calle San Antonio 105, Las Fuentes, 45070 Zapopan, Jal.
+									Salvador Ocampo S/N, Fovissste Miravalle, 44990 Guadalajara, Jal.
 									</Typography>
 								</CardContent>
 							</CardActionArea>
@@ -66,12 +64,11 @@ const Cards = () => {
 								<CardContent>
 									<Typography variant="h5">Salon</Typography>
 									<Typography variant="body">
-										Hacienda del Cipres
+									Terraza Jardin Veranda Salon de Eventos
 										<br />
 									</Typography>
 									<Typography variant="body3">
-										Valle de Sta Cruz 9, Valle de Santa Cruz, 45640 Santa Cruz
-										de las Flores, Jal.
+									Centauro del Nte. 12, Francisco Villa, 45402 Tonalá, Jal.
 									</Typography>
 								</CardContent>
 							</CardActionArea>

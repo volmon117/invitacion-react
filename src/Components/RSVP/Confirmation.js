@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
-import background from "../../Images/foto3.jpg";
+//import background from "../../Images/foto3.jpg";
 import { MenuItem } from "@mui/material";
 import style from "../RSVP/Confirmation.module.css";
 
@@ -20,7 +20,7 @@ const Rsvp = () => {
 		e.preventDefault();
 		try {
 			const response = await fetch(
-				"https://v1.nocodeapi.com/volmon117/google_sheets/eJCyvRmfsUnFJqCr?tabId=hoja1",
+				"https://v1.nocodeapi.com/volmon117/google_sheets/XmNyJkOnKhxgVweA",
 				{
 					method: "POST",
 					headers: {
@@ -41,19 +41,19 @@ const Rsvp = () => {
 			<Box
 				id="Confirmacion"
 				sx={{
-					backgroundImage: `linear-gradient(to right, rgba(140, 140, 140, 0.4), rgba(140, 140, 140, 0.4)),url(${background})`,
+					//backgroundImage: `linear-gradient(to right, rgba(140, 140, 140, 0.4), rgba(140, 140, 140, 0.4)),url(${background})`,
 					padding: "250px 0 250px 0",
 					backgroundPosition: "center",
 				}}
 			>
-				<Typography variant="h2" style={{ color: "#f5e8e0" }}>RSVP</Typography>
-				<Typography variant="h3" style={{ color: "#f5e8e0" }}>
+				<Typography variant="h2" style={{ color: "#242221" }}>RSVP</Typography>
+				<Typography variant="h3" style={{ color: "#242221" }}>
 					¡Queremos compartir este momento tan esperado contigo!
 				</Typography>
-				<Typography variant="h4" style={{ color: "#f5e8e0" }}>
+				<Typography variant="h4" style={{ color: "#242221" }}>
 					Por favor ayúdanos confirmando tú asistencia.
 				</Typography>
-				<Typography variant="h3" style={{ color: "#f5e8e0" }}>- No niños -</Typography>
+				{/*<Typography variant="h3" style={{ color: "#f5e8e0" }}>- No niños -</Typography>*/}
 				<br />
 				<form noValidate autoComplete="on" onSubmit={handleSubmit}>
 					<TextField
