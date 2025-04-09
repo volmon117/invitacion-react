@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/invitacion-react/static/css/main.6d7ded27.css",
-    "main.js": "/invitacion-react/static/js/main.ad765b62.js",
+    "main.js": "/invitacion-react/static/js/main.a720d6e1.js",
     "static/js/787.19adfa7d.chunk.js": "/invitacion-react/static/js/787.19adfa7d.chunk.js",
     "static/media/iglesiafoto.jpg": "/invitacion-react/static/media/iglesiafoto.c6d6faa14bba397b2062.jpg",
     "static/media/salon.jpg": "/invitacion-react/static/media/salon.397811a6332c2e62d646.jpg",
+    "static/media/foto3.jpg": "/invitacion-react/static/media/foto3.d40165106dd7e8a8db2f.jpg",
+    "static/media/foto1.jpg": "/invitacion-react/static/media/foto1.fde9b5ba036373ea0dfa.jpg",
     "index.html": "/invitacion-react/index.html",
     "main.6d7ded27.css.map": "/invitacion-react/static/css/main.6d7ded27.css.map",
-    "main.ad765b62.js.map": "/invitacion-react/static/js/main.ad765b62.js.map",
+    "main.a720d6e1.js.map": "/invitacion-react/static/js/main.a720d6e1.js.map",
     "787.19adfa7d.chunk.js.map": "/invitacion-react/static/js/787.19adfa7d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d7ded27.css",
-    "static/js/main.ad765b62.js"
+    "static/js/main.a720d6e1.js"
   ]
 }
