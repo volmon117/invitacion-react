@@ -3,11 +3,11 @@ import React, { Component } from "react";
 //import Navegation from "./Components/Navegation/Navegation";
 //import Countdown from "./Components/Countdown/Countdown";
 import SaveTheDate from "./Components/SaveTheDate";
-//import People from "./Components/People";
+import People from "./Components/People";
 import Cards from "./Components/Cards/Cards";
 import Rsvp from "./Components/RSVP/Confirmation";
 //import Hashtag from "./Components/Hashtag";
-//import Gifts from "./Components/Gifts";
+import Gifts from "./Components/Gifts";
 //import Codigo from "./Components/Codigo";
 
 import "./App.css";
@@ -32,12 +32,12 @@ class App extends Component {
 					{/*(<Navegation />)*/}
 					<SaveTheDate />
 					{/*<Countdown deadline={this.state.deadline} />*/}
-					{/*<People />*/}
+					<People />
 					{/*<TimeLine />*/}
 					<Cards />
 					<Rsvp />
 					{/*<Hashtag />*/}
-					{/*<Gifts />*/}
+					<Gifts />
 					{/*<Codigo />*/}
 				</div>
 			</ThemeProvider>

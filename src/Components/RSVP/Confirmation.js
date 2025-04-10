@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
-//import background from "../../Images/foto3.jpg";
+import background from "../../Images/foto3.jpg";
 import { MenuItem } from "@mui/material";
 import style from "../RSVP/Confirmation.module.css";
 
@@ -41,7 +41,7 @@ const Rsvp = () => {
 			<Box
 				id="Confirmacion"
 				sx={{
-					//backgroundImage: `linear-gradient(to right, rgba(140, 140, 140, 0.4), rgba(140, 140, 140, 0.4)),url(${background})`,
+					backgroundImage: `linear-gradient(to right, rgba(140, 140, 140, 0.4), rgba(140, 140, 140, 0.4)),url(${background})`,
 					padding: "250px 0 250px 0",
 					backgroundPosition: "center",
 				}}

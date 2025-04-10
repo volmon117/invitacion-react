@@ -1,17 +1,26 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
+//import Typography from "@material-ui/core/Typography";
 import { Box, Grid } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import { CardContent } from "@mui/material";
 import CardActionArea from "@mui/material/CardActionArea";
-import bbva from "../Images/bbva.jpeg";
-import dinero from "../Images/dinero.png";
+//import bbva from "../Images/bbva.jpeg";
+//import dinero from "../Images/dinero.png";
+import cake from "../Images/Diseño sin título.png"
+import { useNavigate } from "react-router";
 
 const Gifts = () => {
+
+	let navigate = useNavigate();
+		const routeChange = () =>{ 
+		let path = "https://mesaderegalos.liverpool.com.mx/milistaderegalos/51656880"; 
+		navigate(path);
+	};
+
 	return (
 		<Box disableGutters justifyContent={"center"} id="Regalos">
-			<Typography variant="h3">
+			{/*<Typography variant="h3">
 				Emprenderemos una aventura juntos fuera del pais,
 				<br />
 				Por lo que les agradecemos sus regalos sean a través de la cuenta BBVA
@@ -22,20 +31,19 @@ const Gifts = () => {
 				sobre el dia del evento
 			</Typography>
 			<br />
-			<img src={dinero} height={100} width={100} alt="" />
-			<Grid container justifyContent="center" paddingTop={"20px"}>
+			<img src={dinero} height={100} width={100} alt="" />*/}
+			<Grid container justifyContent="center" paddingTop={"50px"} paddingBottom={"50px"}>
 				<Card>
 					<CardActionArea
-						onClick={() => {
-							navigator.clipboard.writeText("012320015078156144");
-						}}
+						onClick={routeChange}
 					>
-						<CardMedia component="img" image={bbva} height="100px"></CardMedia>
+						<CardMedia component="img" image={cake}></CardMedia>
 						<CardContent>
 							<h5>
-								012320015078156144
+								Mesa de Regalos Liverpool 
+
+								51656880
 								<br />
-								click para copiar
 							</h5>
 						</CardContent>
 					</CardActionArea>

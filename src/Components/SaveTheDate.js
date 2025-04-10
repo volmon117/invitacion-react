@@ -1,5 +1,5 @@
 import { Typography } from "@material-ui/core";
-//import background from "../Images/foto1.jpg";
+import background from "../Images/foto1.jpg";
 import { Box } from "@mui/material";
 
 const SaveTheDate = () => {
@@ -8,7 +8,7 @@ const SaveTheDate = () => {
 			<Box
 				id="saveDate"
 				sx={{
-					//backgroundImage: `linear-gradient(to right, rgba(140, 140, 140, 0.4), rgba(140, 140, 140, 0.4)),url(${background})`,
+					backgroundImage: `linear-gradient(to right, rgba(140, 140, 140, 0.4), rgba(140, 140, 140, 0.4)),url(${background})`,
 					padding: "320px 0 340px 0",
 					backgroundPosition: "center",
 				}}
@@ -28,6 +28,8 @@ const SaveTheDate = () => {
 				</Typography>
 				<Typography variant="h2" fontFamily="Tangerine">
 					7:00 PM
+					<br />
+					<br />
 				</Typography>
 			</Box>
 		</Box>
