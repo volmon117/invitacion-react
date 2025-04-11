@@ -8,15 +8,10 @@ import CardActionArea from "@mui/material/CardActionArea";
 //import bbva from "../Images/bbva.jpeg";
 //import dinero from "../Images/dinero.png";
 import cake from "../Images/Diseño sin título.png"
-import { useNavigate } from "react-router";
 
 const Gifts = () => {
 
-	let navigate = useNavigate();
-		const routeChange = () =>{ 
-		let path = "https://mesaderegalos.liverpool.com.mx/milistaderegalos/51656880"; 
-		navigate(path);
-	};
+	
 
 	return (
 		<Box disableGutters justifyContent={"center"} id="Regalos">
@@ -32,19 +27,20 @@ const Gifts = () => {
 			</Typography>
 			<br />
 			<img src={dinero} height={100} width={100} alt="" />*/}
-			<Grid container justifyContent="center" paddingTop={"50px"} paddingBottom={"50px"}>
+			<Grid container justifyContent="center" paddingTop={"50px"} paddingBottom={"20px"}>
 				<Card>
 					<CardActionArea
-						onClick={routeChange}
+						onClick={() => {
+							window.open("https://mesaderegalos.liverpool.com.mx/milistaderegalos/51656880");
+						}}
 					>
 						<CardMedia component="img" image={cake}></CardMedia>
 						<CardContent>
-							<h5>
+							<h2>
 								Mesa de Regalos Liverpool 
-
 								51656880
 								<br />
-							</h5>
+							</h2>
 						</CardContent>
 					</CardActionArea>
 				</Card>

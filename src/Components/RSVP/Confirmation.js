@@ -9,30 +9,27 @@ import style from "../RSVP/Confirmation.module.css";
 
 const Rsvp = () => {
 	const [data, setData] = useState({
-		name: "",
-		people: "",
-		phone: "",
-		assistence: "",
+		Nombre: "",
+		Personas: "",
+		Telefono: "",
+		Asistencia: "",
 	});
-	const { name, people, phone, assistence } = data;
-
-	const handleSubmit = async (e) => {
+	const { Nombre, Personas, Telefono, Asistencia } = data;
+const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
 			const response = await fetch(
-				"https://v1.nocodeapi.com/volmon117/google_sheets/XmNyJkOnKhxgVweA",
+				"https://sheetdb.io/api/v1/9s3fsfitqwa7x",
 				{
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
 					},
-					body: JSON.stringify([[name, people, phone, assistence]]),
-				}
-			);
+					body: JSON.stringify({Nombre,Personas,Asistencia,Telefono}),
+				}		);
 			await response.json();
-			setData({ assistence: "", name: "", people: "", phone: "" });
-		} catch (err) {
-			console.log(err);
+			setData({ Asistencia: "", Nombre: "", Personas: "", Telefono: "" });
+		} catch (err) {		console.log(err);
 		}
 	};
 
@@ -62,7 +59,7 @@ const Rsvp = () => {
 						label="Nombre"
 						variant="standard"
 						size="small"
-						value={data.name}
+						value={data.Nombre}
 						InputLabelProps={{ className: style.label }}
 						style={{
 							marginRight: "10px",
@@ -71,21 +68,21 @@ const Rsvp = () => {
 							filter: "#f5e8e0",
 						}}
 						onChange={(e) => {
-							setData({ ...data, name: e.target.value });
+							setData({ ...data, Nombre: e.target.value });
 						}}
 					/>
 					<TextField
-						id="people"
-						name="people"
+						id="Personas"
+						name="Personas"
 						label="Numero de personas"
 						variant="standard"
 						size="small"
 						select
 						style={{ width: "20%" }}
-						value={data.people}
+						value={data.Personas}
 						InputLabelProps={{ className: style.label }}
 						onChange={(e) => {
-							setData({ ...data, people: e.target.value });
+							setData({ ...data, Personas: e.target.value });
 						}}
 					>
 						<MenuItem value={1}>1</MenuItem>
@@ -96,16 +93,16 @@ const Rsvp = () => {
 					</TextField>
 					<br />
 					<TextField
-						id="phone"
-						name="phone"
-						label="Teléfono"
+						id="Telefono"
+						name="Telefono"
+						label="Telefono"
 						variant="standard"
 						size="small"
-						value={data.phone}
+						value={data.Telefono}
 						style={{ marginRight: "10px", width: "20%" }}
 						InputLabelProps={{ className: style.label }}
 						onChange={(e) => {
-							setData({ ...data, phone: e.target.value });
+							setData({ ...data, Telefono: e.target.value });
 						}}
 					/>
 					<TextField
@@ -115,11 +112,11 @@ const Rsvp = () => {
 						variant="standard"
 						size="small"
 						select
-						value={data.assistence}
+						value={data.Asistencia}
 						style={{ width: "20%" }}
 						InputLabelProps={{ className: style.label }}
 						onChange={(e) => {
-							setData({ ...data, assistence: e.target.value });
+							setData({ ...data, Asistencia: e.target.value });
 						}}
 					>
 						<MenuItem value={1}>Si</MenuItem>
